@@ -45,4 +45,5 @@ return require('packer').startup(function(use)
 
 }
 use("lewis6991/gitsigns.nvim")
+use("m4xshen/autoclose.nvim")
 end)
