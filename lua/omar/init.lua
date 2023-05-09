@@ -1,2 +1,2 @@
 require("omar.remap")
-require("omar.editor")
+require("omar.set")
