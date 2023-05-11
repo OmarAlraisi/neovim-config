@@ -61,6 +61,8 @@ return require('packer').startup(function(use)
 		    {'L3MON4D3/LuaSnip'},     -- Required
 	    }
     }
+    use('simrat39/inlay-hints.nvim')
+    use('simrat39/rust-tools.nvim')
 
     -- For git highlighting when file is modified
     use("lewis6991/gitsigns.nvim")
