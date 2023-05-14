@@ -36,7 +36,8 @@ wk.register({
                 r = { "Rename" },
             },
             h = { "Signature help" },
-            f = { "Format" }
+            f = { "Format" },
+            p = { "Prettify" },
         },
         y = {
             desc = "Yank to clipboard"

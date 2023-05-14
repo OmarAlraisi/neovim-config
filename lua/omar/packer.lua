@@ -69,4 +69,8 @@ return require('packer').startup(function(use)
 
     -- For auto closing pair characters
     use("m4xshen/autoclose.nvim")
+
+    -- Prettier
+    use('jose-elias-alvarez/null-ls.nvim')
+    use('MunifTanjim/prettier.nvim')
 end)
