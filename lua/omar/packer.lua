@@ -73,4 +73,7 @@ return require('packer').startup(function(use)
     -- Prettier
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
+
+    -- Commentary
+    use('tpope/vim-commentary')
 end)
