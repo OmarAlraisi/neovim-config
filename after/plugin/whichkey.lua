@@ -28,6 +28,7 @@ wk.register({
         l = {
             name = "LSP",
             d = { "Definition" },
+            D = { "Diagnose" },
             K = { "Hover" },
             a = {
                 name = "Action",
