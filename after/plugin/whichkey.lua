@@ -48,6 +48,9 @@ wk.register({
         },
         x = {
             desc = "Paste"
+        },
+        q = {
+            desc = "Quit"
         }
     }
 })
