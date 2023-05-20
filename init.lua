@@ -20,3 +20,7 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- quits vim
 vim.keymap.set("n", "<leader>q", ":q<CR>")
+
+-- splitting screens
+vim.keymap.set("n", "<leader>-", ":sp<CR>", { desc = "Horizontal Split" })
+vim.keymap.set("n", "<leader>|", ":vs<CR>", { desc = "Vertical Split" })
