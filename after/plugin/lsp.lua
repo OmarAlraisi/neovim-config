@@ -14,6 +14,10 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	-- `Enter` key to confirm completion
 	['<CR>'] = cmp.mapping.confirm({select = false}),
 
+    -- Next and previous selection
+    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+
 	-- Ctrl+Space to trigger completion menu
 	['<C-.'] = cmp.mapping.complete(),
 })
