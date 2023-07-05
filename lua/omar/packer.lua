@@ -72,8 +72,8 @@ return require('packer').startup(function(use)
     use("m4xshen/autoclose.nvim")
 
     -- Prettier
-    use('jose-elias-alvarez/null-ls.nvim')
-    use('MunifTanjim/prettier.nvim')
+    -- use('jose-elias-alvarez/null-ls.nvim')
+    -- use('MunifTanjim/prettier.nvim')
 
     -- Commentary
     use('tpope/vim-commentary')

@@ -1,21 +1,21 @@
-local prettier = require("prettier")
+-- local prettier = require("prettier")
 
-prettier.setup({
-  bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
-  filetypes = {
-    "css",
-    "graphql",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "less",
-    "markdown",
-    "scss",
-    "typescript",
-    "typescriptreact",
-    "yaml",
-  },
-})
+-- prettier.setup({
+--   bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
+--   filetypes = {
+--     "css",
+--     "graphql",
+--     "html",
+--     "javascript",
+--     "javascriptreact",
+--     "json",
+--     "less",
+--     "markdown",
+--     "scss",
+--     "typescript",
+--     "typescriptreact",
+--     "yaml",
+--   },
+-- })
 
-vim.keymap.set('n', '<leader>lp', ':Prettier\n')
+-- vim.keymap.set('n', '<leader>lp', ':Prettier\n')
