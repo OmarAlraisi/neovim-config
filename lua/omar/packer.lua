@@ -5,30 +5,12 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use ('wbthomason/packer.nvim')
 
-    -- Key binding suggestions (popup)
-    use {
-        "folke/which-key.nvim",
-        config = function()
-            vim.o.timeout = true
-            vim.o.timeoutlen = 300
-        end
-    }
-
     -- For file finding
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.1',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-
-    -- Theme
-	use({ 
-		'folke/tokyonight.nvim', 
-		as = 'tokyonight',
-		config = function()
-			vim.cmd('colorscheme tokyonight')
-		end
-	})
 
     -- For text highlighting
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
