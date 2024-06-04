@@ -5,6 +5,15 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use ('wbthomason/packer.nvim')
 
+    -- Theme
+    use ({
+        'rose-pine/neovim',
+        as = "rose-pine",
+        config = function()
+            vim.cmd('colorscheme rose-pine')
+        end
+    })
+
     -- For file finding
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.1',
