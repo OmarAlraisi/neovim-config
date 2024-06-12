@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
 
     -- For text highlighting
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use('nvim-treesitter/playground')
+	-- use('nvim-treesitter/playground')
 
     -- For fast file accessing
 	use('theprimeagen/harpoon')
