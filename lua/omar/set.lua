@@ -19,3 +19,5 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
+
+vim.keymap.set('n', '<leader>fn', ':e <C-R>=expand("%:p:h") . "/" <cr>', { desc = 'Create new file in the same directory of the opened file' })
