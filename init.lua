@@ -22,5 +22,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- splitting screens
-vim.keymap.set("n", "<leader>-", ":sp<CR>", { desc = "Horizontal Split" })
-vim.keymap.set("n", "<leader>|", ":vs<CR>", { desc = "Vertical Split" })
+vim.keymap.set("n", "<leader>-", ":sp<CR> | :TmuxNavigateDown<CR>", { desc = "Horizontal Split" })
+vim.keymap.set("n", "<leader>|", ":vs<CR> | :TmuxNavigateRight<CR>", { desc = "Vertical Split" })
+
+-- create a new file in the same current path
+vim.keymap.set('n', '<leader>fn', ':e <C-R>=expand("%:p:h") . "/" <cr>', { desc = 'Create new file in the same directory of the opened file' })
