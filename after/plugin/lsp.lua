@@ -37,6 +37,17 @@ lsp.set_preferences({
     }
 })
 
+-- Formats file on write
+vim.api.nvim_create_autocmd(
+    'BufWritePre',
+    {
+		pattern = '*',
+		callback = function()
+            vim.lsp.buf.format()
+		end
+	}
+)
+
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
